@@ -1,0 +1,38 @@
+body{
+    font-family: sans-serif;
+    color:#eee;
+    background-color:#222;
+}
+header{
+    position:relative;
+    height: 35vh;
+    border-bottom: 7px solid #eee;
+}
+main{
+    height: 65vh;
+    color:#eee;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.left{
+    width:42rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.right{
+    width:32rem;
+    font-size:2rem;
+}
+.between{
+    font-size:2rem;
+    position: absolute;
+    right: 2rem;
+    top:2rem;
+}
+.again{
+    position: absolute;
+    top:2rem;
+    left:2rem;
+}
