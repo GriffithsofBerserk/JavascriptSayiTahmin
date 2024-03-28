@@ -1,6 +1,6 @@
 'use strict';
 
-let secretNumber = Math.trunc(Math.random() * 20)+1;
+let secretNumber = Math.trunc(Math.random() * 100)+1;
 let score = 20;
 let highscore = 0;
 
@@ -24,7 +24,7 @@ document.querySelector('.check').addEventListener('click',function(){
 
     if (score>highscore) {
         highscore = score;
-        document.querySelector('.label-highscore').textContent = highscore;
+        document.querySelector('.label-highscoreNumber').textContent = highscore;
     }
 
 });

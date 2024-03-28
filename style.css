@@ -89,3 +89,13 @@ h1{
 .label-score{
     margin-bottom:2rem;
 }
+.label-scoreNumber{
+    position: absolute;
+    bottom:16rem;
+    right: 43rem;
+}
+.label-highscoreNumber{
+    position: absolute;
+    bottom:11.5rem;
+    right: 34rem;
+}
