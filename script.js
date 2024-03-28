@@ -24,7 +24,7 @@ document.querySelector('.check').addEventListener('click',function(){
 
     if (score>highscore) {
         highscore = score;
-        document.querySelector('.highscore').textContent = highscore;
+        document.querySelector('.label-highscore').textContent = highscore;
     }
 
 });
