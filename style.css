@@ -99,3 +99,15 @@ h1{
     bottom:11.5rem;
     right: 34rem;
 }
+.rights{
+    font-size:2rem;
+    position: absolute;
+    right: 3.5rem;
+    top:5rem;
+}
+.rights-number{
+    font-size:2rem;
+    position: absolute;
+    right: 2rem;
+    top:5rem;
+}
