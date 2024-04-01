@@ -15,6 +15,12 @@ document.querySelector('.check').addEventListener('click',function(){
 
     console.log(secretNumber, typeof secretNumber);
 
+    if (rights == 0) {
+        document.querySelector('.rights-number').textContent = rights;
+        displayMessage('Oyun Bitti! Tekrar Başlatmalısınız.');
+        return 0;
+    };
+
     if (secretNumber === guess) {
         displayMessage('Doğru tahmin ettin!');
         document.querySelector('.number').textContent = secretNumber;
@@ -37,11 +43,6 @@ document.querySelector('.check').addEventListener('click',function(){
         document.querySelector('.number').style.width = '30rem';
         score = 0;
         document.querySelector('.label-scoreNumber').textContent = score;
-
-        if (rights === 0) {
-            rights = 0;
-            document.querySelector('.rights-number').textContent = rights;
-        }
     };
 
 });
