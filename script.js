@@ -11,6 +11,7 @@ const displayMessage = function (message){
 
 document.querySelector('.check').addEventListener('click',function(){
     const guess = Number(document.querySelector('.guess').value);
+    
     console.log(guess, typeof guess);
 
     console.log(secretNumber, typeof secretNumber);
@@ -18,6 +19,7 @@ document.querySelector('.check').addEventListener('click',function(){
     if (rights == 0) {
         document.querySelector('.rights-number').textContent = rights;
         displayMessage('Oyun Bitti! Tekrar Başlatmalısınız.');
+        document.querySelector('.number').textContent = secretNumber;
         return 0;
     };
 
@@ -32,18 +34,23 @@ document.querySelector('.check').addEventListener('click',function(){
         document.querySelector('.label-scoreNumber').textContent = score;
         highscore = score;
         document.querySelector('.label-highscoreNumber').textContent = highscore;
+
+        secretNumber = Math.trunc(Math.random() * 10)+1;
     }
      else {
         rights -= 1;
         document.querySelector('.rights-number').textContent = rights;
         displayMessage('Tekrar Deneyin!');
-        document.querySelector('.number').textContent = secretNumber;
 
         document.querySelector('body').style.backgroundColor = '#ff0000';
         document.querySelector('.number').style.width = '30rem';
         score = 0;
         document.querySelector('.label-scoreNumber').textContent = score;
     };
+
+    document.querySelector('.again').addEventListener('click', function(){
+        location.reload();
+    })
 
 });
 
