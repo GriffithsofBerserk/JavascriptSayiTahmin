@@ -1,1 +1,1 @@
-# JavascriptTraining
+# JavascriptSayiTahmin
